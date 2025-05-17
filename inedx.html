@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kafan School</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .section h2 {
+      margin-bottom: 40px;
+    }
+    .notice-board li {
+      margin-bottom: 10px;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+    .footer a {
+      color: white;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kafan School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision & Mission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notices">Notice Board</a></li>
+          <li class="nav-item"><a class="nav-link" href="#campus">Our Campus</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Kafan School</h1>
+      <p class="lead">Empowering Minds, Shaping Futures</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="text-center">About Us</h2>
+      <p class="text-center">
+        Kafan School is a leading institution committed to providing quality education and fostering a nurturing environment for students to excel academically and personally.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision & Mission Section -->
+  <section id="vision" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center">Our Vision & Mission</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Our Vision</h4>
+          <p>
+            To be a beacon of excellence in education, inspiring students to achieve their fullest potential and contribute positively to society.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4>Our Mission</h4>
+          <p>
+            To provide a holistic education that nurtures intellectual growth, character development, and a lifelong love for learning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Board Section -->
+  <section id="notices" class="section">
+    <div class="container">
+      <h2 class="text-center">Notice Board</h2>
+      <ul class="notice-board list-unstyled">
+        <li><strong>May 20, 2025:</strong> Parent-Teacher Meeting at 10:00 AM.</li>
+        <li><strong>June 1, 2025:</strong> Science Fair Exhibition.</li>
+        <li><strong>June 15, 2025:</strong> Summer Break Begins.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Our Campus Section -->
+  <section id="campus" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center">Our Campus</h2>
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.876364567456!2d7.495081314786025!3d9.057851793505037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a5b1f1c1c1f%3A0x1a2b3c4d5e6f7g8h!2sAbuja%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1620220000000!5m2!1sen!2sng"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 Kafan School. All rights reserved.</p>
+      <div>
+        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
